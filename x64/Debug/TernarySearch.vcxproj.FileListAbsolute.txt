@@ -1,0 +1,4 @@
+C:\Users\m2008656\source\repos\TernarySearch\TernarySearch\x64\Debug\TernarySearch.vcxproj.AssemblyReference.cache
+C:\Users\m2008656\source\repos\TernarySearch\TernarySearch\x64\Debug\TernarySearch.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\m2008656\source\repos\TernarySearch\TernarySearch\x64\Debug\TernarySearch.TerSearchForm.resources
+C:\Users\m2008656\source\repos\TernarySearch\TernarySearch\x64\Debug\TernarySearch.vcxproj.GenerateResource.cache

@@ -1,0 +1,24 @@
+﻿  TerSearchForm.cpp
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\TerSearchForm.cpp(10,37): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\TerSearchForm.cpp(61,31): warning C4244: аргумент: преобразование "wchar_t" в "const _Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\TerSearchForm.cpp(70,18): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\TerSearchForm.cpp(99,31): warning C4244: аргумент: преобразование "wchar_t" в "const _Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\TerSearchForm.cpp(108,18): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  ternarySearchFunc.cpp
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(13,9): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(13,17): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(21,13): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(32,9): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(32,17): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\m2008656\source\repos\ternarySearch\TernarySearch\ternarySearchFunc.cpp(40,13): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+  Создание кода...
+  ternarySearchFunc.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  TernarySearch.vcxproj -> C:\Users\m2008656\source\repos\ternarySearch\x64\Debug\TernarySearch.exe

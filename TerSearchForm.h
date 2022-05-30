@@ -49,6 +49,9 @@ namespace TernarySearch {
 	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TextBox^ textBoxN;
+	private: System::Windows::Forms::Label^ label4;
+
+
 
 
 	//private: System::Windows::Forms::TextBox^ textBoxN;
@@ -76,13 +79,14 @@ namespace TernarySearch {
 			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBoxN = (gcnew System::Windows::Forms::TextBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// buttonMax
 			// 
 			this->buttonMax->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->buttonMax->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
-			this->buttonMax->Location = System::Drawing::Point(115, 260);
+			this->buttonMax->Location = System::Drawing::Point(297, 425);
 			this->buttonMax->Name = L"buttonMax";
 			this->buttonMax->Size = System::Drawing::Size(140, 30);
 			this->buttonMax->TabIndex = 0;
@@ -94,7 +98,7 @@ namespace TernarySearch {
 			// 
 			this->buttonMin->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->buttonMin->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
-			this->buttonMin->Location = System::Drawing::Point(351, 259);
+			this->buttonMin->Location = System::Drawing::Point(533, 424);
 			this->buttonMin->Name = L"buttonMin";
 			this->buttonMin->Size = System::Drawing::Size(140, 30);
 			this->buttonMin->TabIndex = 1;
@@ -109,7 +113,7 @@ namespace TernarySearch {
 			this->label1->Cursor = System::Windows::Forms::Cursors::Default;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft PhagsPa", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(124, 9);
+			this->label1->Location = System::Drawing::Point(315, 100);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(358, 48);
 			this->label1->TabIndex = 2;
@@ -122,7 +126,7 @@ namespace TernarySearch {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(46, 100);
+			this->label3->Location = System::Drawing::Point(118, 191);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(377, 29);
 			this->label3->TabIndex = 4;
@@ -132,9 +136,9 @@ namespace TernarySearch {
 			// textBoxM
 			// 
 			this->textBoxM->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->textBoxM->Location = System::Drawing::Point(439, 109);
+			this->textBoxM->Location = System::Drawing::Point(524, 200);
 			this->textBoxM->Name = L"textBoxM";
-			this->textBoxM->Size = System::Drawing::Size(100, 20);
+			this->textBoxM->Size = System::Drawing::Size(412, 20);
 			this->textBoxM->TabIndex = 6;
 			this->textBoxM->TextChanged += gcnew System::EventHandler(this, &TerSearchForm::textBoxM_TextChanged);
 			// 
@@ -144,7 +148,7 @@ namespace TernarySearch {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(204, 171);
+			this->label2->Location = System::Drawing::Point(276, 262);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(219, 29);
 			this->label2->TabIndex = 3;
@@ -154,17 +158,25 @@ namespace TernarySearch {
 			// textBoxN
 			// 
 			this->textBoxN->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->textBoxN->Location = System::Drawing::Point(439, 180);
+			this->textBoxN->Location = System::Drawing::Point(524, 271);
 			this->textBoxN->Name = L"textBoxN";
-			this->textBoxN->Size = System::Drawing::Size(100, 20);
+			this->textBoxN->Size = System::Drawing::Size(412, 20);
 			this->textBoxN->TabIndex = 7;
+			// 
+			// label4
+			// 
+			this->label4->Location = System::Drawing::Point(0, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(100, 23);
+			this->label4->TabIndex = 2;
 			// 
 			// TerSearchForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->ClientSize = System::Drawing::Size(584, 361);
+			this->ClientSize = System::Drawing::Size(966, 542);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->textBoxN);
 			this->Controls->Add(this->textBoxM);
 			this->Controls->Add(this->label3);
@@ -175,6 +187,7 @@ namespace TernarySearch {
 			this->Name = L"TerSearchForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"TerSearchForm";
+			this->Load += gcnew System::EventHandler(this, &TerSearchForm::TerSearchForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -187,5 +200,7 @@ private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonMin_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonMax_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void TerSearchForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

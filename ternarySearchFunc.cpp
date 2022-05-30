@@ -19,7 +19,6 @@ double ternary_max(vector<double>& a, double n) {
 		}
 	}
 	return a[l + 1];
-	//cout << "value " << a[l + 1] << endl << "index " << l << endl;
 
 }
 
